@@ -22,5 +22,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t yourusername/node-hello:v1 .
-          docker push yourusername/node-hello:v1
+          docker build -t vinay1711/node-hello:v1 .
+          docker push vinay1711/node-hello:v1
