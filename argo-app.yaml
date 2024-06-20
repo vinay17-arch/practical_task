@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://github.com/vinay17-arch/practical_task.git'
     targetRevision: HEAD
-    path: charts/node-hello
+    path: helm-chart/node-hello
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
