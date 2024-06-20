@@ -5,10 +5,11 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: vinay1711/node-hello
+
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
@@ -40,8 +41,9 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
+  targetPort: 3000
 
 ingress:
   enabled: false
