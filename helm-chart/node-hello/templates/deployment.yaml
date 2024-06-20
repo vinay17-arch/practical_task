@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: node-hello
-          image: vinay1711/node-hello:latest
+          image: vinay1711/node-hello:v1
           ports:
             - containerPort: 3000
           readinessProbe:
